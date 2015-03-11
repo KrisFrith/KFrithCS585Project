@@ -19,28 +19,28 @@ public class App {
 		ExecuteShellCommand executeCommand = new ExecuteShellCommand();
 		
 		String domainName = "https://github.com/KrisFrith/SimpleTestPrograms_CS585.git";
- 		String command001 = "cd ..";
-		String command01 = "cd AppData";
- 		String command02 = "cd Local";
- 		String command03 = "cd GitHub";
+ 		//String command001 = "cd ..";
+		//String command01 = "cd AppData";
+ 		//String command02 = "cd Local";
+ 		//String command03 = "cd GitHub";
 		String command1 = "git init";
 		String command2 = "git clone " + domainName;
 		
 		
-		String output001 = executeCommand.executeCommand(command001);
-		System.out.println(output001);
+		//String output001 = executeCommand.executeCommand(command001);
+		//System.out.println(output001);
 		
-		String output0011 = executeCommand.executeCommand(command001);
-		System.out.println(output0011);
+		//String output0011 = executeCommand.executeCommand(command001);
+		//System.out.println(output0011);
 		
-		String output01 = executeCommand.executeCommand(command01);
-		System.out.println(output01);
+		//String output01 = executeCommand.executeCommand(command01);
+		//System.out.println(output01);
 		
-		String output02= executeCommand.executeCommand(command02);
-		System.out.println(output02);
+		//String output02= executeCommand.executeCommand(command02);
+		//System.out.println(output02);
 		
-		String output03 = executeCommand.executeCommand(command03);
-		System.out.println(output03);
+		//String output03 = executeCommand.executeCommand(command03);
+		//System.out.println(output03);
 		
 		String output1 = executeCommand.executeCommand(command1);
 		System.out.println(output1);
