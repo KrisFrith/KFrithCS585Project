@@ -1,3 +1,5 @@
+//Clones git repository URLs.  Currently not working.  
+
 package CS585Project;
 
 import java.io.BufferedReader;

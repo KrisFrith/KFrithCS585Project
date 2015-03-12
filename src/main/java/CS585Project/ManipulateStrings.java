@@ -1,3 +1,5 @@
+//Used to remove or add content to string names (methods and classes)
+
 package CS585Project;
 
 import java.util.List;
@@ -15,7 +17,6 @@ public class ManipulateStrings {
 		String fileName = currentClassList.get(i);
 		String extensionRemovedClass = StringUtils.substringBefore(fileName, ".");
 		currentClassList.set(i, extensionRemovedClass);
-		//System.out.println("Class without .java is " + currentClassList.get(i));
 		}
 	
 	return currentClassList;
@@ -28,7 +29,6 @@ public class ManipulateStrings {
 	for (int i = 0; i < currentClassList.size(); i++){
 		String fileName = "CS585ClassProjectTestCode." + currentClassList.get(i);
 		currentClassList.set(i, fileName);
-		//System.out.println("class formal name is " + currentClassList.get(i));
 		}
 	
 	return currentClassList;

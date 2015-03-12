@@ -1,3 +1,6 @@
+//Checks methods in the test classes to determine if there are test classes for constructors
+//in the source classes.  
+
 package CS585Project;
 
 import java.lang.reflect.Method;

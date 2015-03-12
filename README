@@ -11,5 +11,17 @@ Alpha Version 1.0
 Note:  Class Execute Shell Command has been shown to work in Mac environment in one instance, 
 but not in Windows, so currently moved to a future version for completion.
 
+Purpose of project: To clone a public Git repository and analyze it for test coverage.
 
+The tool currently uses Egit to import the source code.  The file directory is currently hard-coded.
+To iterate trough classes and methods, in order to get names of classes and methods and numbers of methods
+overall and per class.
+
+To use the reflection library, this project must depend upon the project being tested. To do so,
+right click on the project name (in Eclipse), select BuildPath, configure BuildPath, and then under project
+tab, add the project you are testing.
+
+This project enforces naming conventions for testing.  If test classes are not named as sourceClassTest,
+they will not be recognized as tests.  If constructor tests do not have "Constructor" in them, they are
+also not recognized.
 

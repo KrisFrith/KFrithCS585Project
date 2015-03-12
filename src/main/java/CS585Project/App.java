@@ -3,16 +3,16 @@ package CS585Project;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Arrays;
+//import java.util.Arrays;
 
-import org.apache.commons.io.FilenameUtils;
+//import org.apache.commons.io.FilenameUtils;
 
 import org.apache.commons.lang3.ArrayUtils;
 import CS585Project.FindFile;
 import CS585Project.CountClassMethods;
 import CS585Project.ManipulateStrings;
 import CS585Project.CompareClasses;
-import CS585Project.ExecuteShellCommand;
+//import CS585Project.ExecuteShellCommand;
 import CS585Project.CompareMethods;
 import CS585Project.CheckConstructorTestMethods;
 
@@ -36,12 +36,13 @@ public class App {
 		//String output2 = executeCommand.executeCommand(command2);
 		//System.out.println(output2);
 		
-		
+		//Find the classes and create a list for the source classes
 		FindFile findSourceFile = new FindFile();
 		List<String> foundSource = new ArrayList<String>();
 		foundSource = findSourceFile.textFiles("C:\\Users\\Kristin\\git\\SimpleTestPrograms_CS585\\main\\java\\CS585ClassProject");
 		System.out.println("The classes found are: " + foundSource);
 	
+		//Find the classes and create a list for the test classes
 		FindFile findTestFile = new FindFile();
 		List<String> foundTest = new ArrayList<String>();
 		foundTest = findTestFile.textFiles("C:\\Users\\Kristin\\git\\SimpleTestPrograms_CS585\\test\\java");
@@ -66,7 +67,7 @@ public class App {
 		Method[] sourceMethods = null;;
 		Method[] testMethods = null;
 		
-		//Get methods for each class
+		//Get the methods for each class in both source and test classes
 		for (int i = 0; i < foundSource.size(); i++){
 			Method[] currentSourceMethods;
 			CountClassMethods countClassMethods = new CountClassMethods();
@@ -81,9 +82,11 @@ public class App {
 			testMethods = ArrayUtils.addAll(testMethods, currentTestMethods);
 		}
 
+		//compare the methods to determine if there are test classes conventionally named to match source classes.
 		CompareMethods compareMethods = new CompareMethods();
 		compareMethods.compareMethods(sourceMethods, testMethods);
 		
+		//Do a check for constructor tests
 		CheckConstructorTestMethods checkConstructorTestMethods = new CheckConstructorTestMethods();
 		checkConstructorTestMethods.checkConstructorTestMethods(testMethods);
 		

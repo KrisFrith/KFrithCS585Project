@@ -1,3 +1,5 @@
+//Find the source files based on the directory address provided
+
 package CS585Project;
 
 import java.io.File;

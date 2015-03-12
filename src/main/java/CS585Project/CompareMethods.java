@@ -1,3 +1,6 @@
+//Compares source and test methods - confirming whether or not test classes exist and if they do
+//that they conform to naming conventions. Does not include constructor test methods
+
 package CS585Project;
 
 import java.lang.reflect.Method;

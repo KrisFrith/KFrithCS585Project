@@ -1,3 +1,6 @@
+//Compares source and test classes - confirming whether or not test classes exist and if they do
+//that they conform to naming conventions.
+
 package CS585Project;
 
 import java.util.ArrayList;

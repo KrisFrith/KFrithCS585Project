@@ -1,3 +1,6 @@
+//Iterates through object inatantiations of the classes and notes the quantity and names
+//of methods for each class.
+
 package CS585Project;
 
 import java.lang.reflect.Method;
